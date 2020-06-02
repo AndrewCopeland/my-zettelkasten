@@ -11,4 +11,3 @@ createdb: database creation failed: ERROR:  could not create directory "base/165
 
 
 ## Links
-- [1590776963-docker-volume-prude.md](1590776963-docker-volume-prude.md)

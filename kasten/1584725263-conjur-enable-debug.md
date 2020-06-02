@@ -8,4 +8,3 @@ Also you can enable debug by concatenating `CONJUR_LOG_LEVEL=debug` to the `/opt
 - [1584721461-conjur-appliance.md](1584721461-conjur-appliance.md)
 - [1587416072-conjur-nginx-logs.md](1587416072-conjur-nginx-logs.md)
 - [1587416072-conjur-nginx-logs.md](1587416072-conjur-nginx-logs.md)
-- [1587416072-conjur-nginx-logs.md](1587416072-conjur-nginx-logs.md)

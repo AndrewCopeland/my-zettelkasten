@@ -10,7 +10,9 @@
 
 
 ### Summary
-1. Have to populate pCloud vauklt with X ammount of accounts. I am thinking about testing 5,000 at first.
+1. Have to populate Cloud vauklt with X amount of accounts
+  - [Using this script to auto onboard accounts](1591130562-cyberark-epv-api-scripts-account-onboard-utility.md)
+  - [Using this script to auto generate csv](1591131570-powershell-auto-generate-csv.md)
 
 
 

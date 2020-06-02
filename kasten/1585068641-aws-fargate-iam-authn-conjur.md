@@ -5,9 +5,9 @@ How to obtain the Access Key, Secret Key and Token is mentioned here: https://do
 
 The container should have an environment variable set called `AWS_CONTAINER_CREDENTIALS_RELATIVE_URI`
 
-
 ## Retrieving access key, secret access key and token
 To obtain the AWS credentials perform the following command from the ECS instance:
+- The environment variable `AWS_CONTAINER_CREDENTIALS_RELATIVE_URI` may not be visible after execing into the container. If so list the environment variables of PID 1.
 
 ### Bash
 ```bash

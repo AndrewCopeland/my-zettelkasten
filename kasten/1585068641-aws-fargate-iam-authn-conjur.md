@@ -7,7 +7,7 @@ The container should have an environment variable set called `AWS_CONTAINER_CRED
 
 ## Retrieving access key, secret access key and token
 To obtain the AWS credentials perform the following command from the ECS instance:
-- The environment variable `AWS_CONTAINER_CREDENTIALS_RELATIVE_URI` may not be visible after execing into the container. If so list the environment variables of PID 1.
+- The environment variable `AWS_CONTAINER_CREDENTIALS_RELATIVE_URI` may not be visible after execing into the container. [If so list the environment variables of PID 1 or the PID of the conjur client.](1591075484-bash-env.md)
 
 ### Bash
 ```bash

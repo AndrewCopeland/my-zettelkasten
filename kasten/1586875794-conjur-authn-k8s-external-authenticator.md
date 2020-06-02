@@ -25,12 +25,19 @@ Below is the policy that needs to be loaded to configure the external authn-k8s 
 Load the policy by executing the command:
 `conjur policy load root root.yml`
 
-Now that the authenticator is configured lets enable the authenticator by executing the following commands on the conjur follower container:
+Now that the authenticator is configured lets enable the authenticator by executing the following commands on the conjur follower container.
+
+Generate the ca cert and key used by the `authn-k8s` service ([Sometimes this will not work and you will need to generate the certificates manually](1588967540-conjur-authn-k8s-manually-generating-certificates.md)):
 ```bash
 docker exec <dap follower container name> \
     chpst -u conjur conjur-plugin-service possum \
     rake authn_k8s:ca_init["conjur/authn-k8s/k8s-cluster-1"]
-evoke variable set CONJUR_AUTHENTICATORS authn,authn-k8s/k8s-cluster-1
+```
+
+Enable the `authn-k8s/k8s-cluster-1` service id:
+```bash
+docker exec <dap follower container name> \
+  evoke variable set CONJUR_AUTHENTICATORS authn,authn-k8s/k8s-cluster-1
 ```
 
 Next is to create a k8s service account that has the needed permissions for the `authn-k8s` to authenticate pods:

@@ -5,7 +5,7 @@
 `$Rows` is the amount of rows you want generated for the CSV.
 
 ```powershell
- $Columns=@("username", "address", "safe", "platformID", "password", "disableAutoMgmt", "disableAutoMgmtReason")
+$Columns=@("username", "address", "safe", "platformID", "password", "disableAutoMgmt", "disableAutoMgmtReason")
 
 $Values=@{
     username = @("admin", "administrator", "operator", "dev");

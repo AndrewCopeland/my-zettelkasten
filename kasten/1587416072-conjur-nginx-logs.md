@@ -7,3 +7,4 @@ You can find the nginx logs after execing into the conjur contain and reading th
 
 
 ## Links
+- [1584725263-conjur-enable-debug.md](1584725263-conjur-enable-debug.md)

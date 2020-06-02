@@ -1,7 +1,7 @@
 # 1588967540 conjur-authn-k8s-manually-generating-certificates
 #conjur #authn-k8s
 
-To manually get the conjur ca key and ca cert for `authn-k8s` in conjur perform the following bash script:
+To manually get the conjur ca key and ca cert for `authn-k8s` in conjur perform the following bash script. This assumes you are on the CLI container:
 ```bash
 #!/bin/bash
 set -e

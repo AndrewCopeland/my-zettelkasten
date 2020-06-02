@@ -1,8 +1,8 @@
 # 1591131570 powershell-auto-generate-csv
 
-`$Columns` is the columns required by the csv.
-`$Values` is the value of the columns random selected from the list. if empty than nothing is placed in that rows column, If column is not seen then a random 10 alphanumeric string will be printed
-`$Rows` is the amount of rows you want generated for the CSV.
+- `$Columns` is the columns required by the csv.
+- `$Values` is the value of the columns random selected from the list. if empty than nothing is placed in that rows column, If column is not seen then a random 10 alphanumeric string will be printed
+- `$Rows` is the amount of rows you want generated for the CSV.
 
 ```powershell
 $Columns=@("username", "address", "safe", "platformID", "password", "disableAutoMgmt", "disableAutoMgmtReason")

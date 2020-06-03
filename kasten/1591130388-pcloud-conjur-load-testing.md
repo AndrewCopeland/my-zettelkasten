@@ -2,7 +2,7 @@
 #conjue #dap #pcloud #sync #testing
 
 ### Prerequistes
-- Setup DAP master
+- [Setup DAP master](1591124437-dap-install.md)
 - Get pCloud account
 - Setup CPM service on pCloud client connector
 - Setup Vault Conjur Syncronizer on pCloud client connector

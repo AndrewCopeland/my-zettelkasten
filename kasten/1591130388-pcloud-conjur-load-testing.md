@@ -5,7 +5,7 @@
 - [Setup DAP master](1591124437-dap-install.md)
 - Get pCloud account
 - Setup CPM service on pCloud client connector
-- Setup Vault Conjur Syncronizer on pCloud client connector
+- [Setup Vault Conjur Syncronizer on pCloud client connector](1587142600-cyberark-conjur-vault-sync-install.md)
 
 
 

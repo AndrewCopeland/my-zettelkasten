@@ -125,3 +125,4 @@ Next step is to define a `host` within conjur that represents a k8s resources.
 - [1586274452-conjur-authn-k8s.md](1586274452-conjur-authn-k8s.md)
 - [1586877593-conjur-authn-k8s-defining-host.md](1586877593-conjur-authn-k8s-defining-host.md)
 - [1588967540-conjur-authn-k8s-manually-generating-certificates.md](1588967540-conjur-authn-k8s-manually-generating-certificates.md)
+- [1591301273-conjur-authn-k8s-external-authenticator-follower-in-k8s.md](1591301273-conjur-authn-k8s-external-authenticator-follower-in-k8s.md)

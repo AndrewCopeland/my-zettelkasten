@@ -7,7 +7,8 @@ createdb: database creation failed: ERROR:  could not create directory "base/165
 ---- End output of "bash"  "/tmp/chef-script20200529-107-1uj07es" ----
 ```
 
-
+## Solutions
+- [prune the docker volume](1591077113-docker-volume-prune.md)
 
 
 ## Links

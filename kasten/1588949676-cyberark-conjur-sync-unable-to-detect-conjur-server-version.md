@@ -1,5 +1,5 @@
 # 1588949676 cyberark-conjur-sync-unable-to-detect-conjur-server-version
-#cyberark #conjur #sync #troubleshooting
+#cyberark #conjur #sync #error
 
 The following error message:
 ```

@@ -1,7 +1,9 @@
 # 1586875794 conjur-authn-k8s-external-authenticator
-#conjur #authn-k8s #external
+#conjur #authn-k8s #external #follower
 
 When a follower is deployed externally from the k8s cluster the authn-k8s authenticator needs 3 more variables since it needs to connect to the k8s cluster and validate pods attempting to authenticate.
+
+If you are deploying followers within kubernetes but are authenticating applications that live in external k8s cluster follower here. 
 
 Below is the policy that needs to be loaded to configure the external authn-k8s authenticator:
 ```yaml

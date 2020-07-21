@@ -16,7 +16,7 @@ read, query & manage
 
 
 ## Querying Service Connections
-At first we must query the service connections. In this example we can gind a specific service connection using a name however under the hood a ID is used to identity specific service connections.
+At first we must query the service connections. In this example we can find a specific service connection using a name however under the hood a ID is used to identify specific service connections.
 
 To query a service connection with a specific name perform the following HTTP request:
 ```
@@ -24,7 +24,7 @@ GET https://dev.azure.com/{{organizationname}}/{{projectname}}/_apis/serviceendp
 Authorization: Basic :{{Password}}
 Content-Type: application/json
 ```
-In this case the {{Password}} is the generated PAT, the colon is intentional because username does not need to provided when authenticating with a PAT.
+In this case the {{Password}} is the generated PAT, the colon is intentional because username is not provided when authenticating with a PAT.
 
 After sending in the request above. We should receieve a response that looks like the following:
 
@@ -81,9 +81,9 @@ After sending in the request above. We should receieve a response that looks lik
 
 We should check that only 1 result was returned since there should be a 1-1 mapping between name and service connection.
 
-We can now parse the ID and make a direct request to this service connection. 
+We can now parse the ID and make a direct request to this service connection. As you can see the service connection id is `62fadb0d-4d25-4595-97d4-6bca28b5b1c3` which will be used in subsequent calls.
 ```
-GET https://dev.azure.com/{{organization}}/{{project}}/_apis/serviceendpoint/endpoints/62fadb0d-4d25-4595-97d4-6bca28b5b1c3?api-version=5.1-preview.2
+GET https://dev.azure.com/{{organizationname}}/{{projectname}}/_apis/serviceendpoint/endpoints/62fadb0d-4d25-4595-97d4-6bca28b5b1c3?api-version=5.1-preview.2
 
 Authorization: Basic :{{Password}}
 Content-Type: application/json

@@ -16,7 +16,7 @@ On the Conjur container you must set 2 environment variables:
   value: ""
 ```
 
-When the follower starts up, it should authenticate top the master as it normally would with seed fetcher. But now applications from other k8s clusters will be able to authenticate against this follower.
+When the follower starts up, it should authenticate to the master as it normally would with seed fetcher. But now applications from other k8s clusters will be able to authenticate against this follower.
 
 
 ## Links

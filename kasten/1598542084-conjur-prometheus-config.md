@@ -56,6 +56,14 @@ https://prometheus.io/docs/instrumenting/exposition_formats/
 So as of now, it looks like conjur does not support the ability to retrieve metrics with Prometheus.
 This ruby library implements this specific `exposition format`: https://github.com/prometheus/client_ruby
 
+It would probably be easuer to implement the prometheus client library mentioned above however Prometheus also has the ability to use exporters.
+
+Exporters are used when using a thrid party application that does not expose a `/metrics` endpoint that dollows the `exportation format` mentioned above.
+
+Their are exporters for the services that make up the conjur instance:
+- [postgres](https://github.com/wrouesnel/postgres_exporter)
+- [nginx](https://github.com/knyar/nginx-lua-prometheus)
+
 
 
 ## Links

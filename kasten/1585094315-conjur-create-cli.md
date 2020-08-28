@@ -4,7 +4,7 @@
 running the conjur cli container
 
 ```bash
-docker container run -d --name cli --entrypoint "" cyberark/conjur-cli:5 sleep infinity
+docker container run -d --network conjur --name cli --entrypoint "" cyberark/conjur-cli:5 sleep infinity
 ```
 
 ## Links

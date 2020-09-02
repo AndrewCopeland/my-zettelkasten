@@ -3,3 +3,4 @@ code can be found here:
 https://gist.github.com/sysdig-blog/3640f39a7bb1172f986d0e2080c64a75#file-prometheus-metrics-golang-go
 
 ## Links
+- [1599069978-prometheus-metric-types.md](1599069978-prometheus-metric-types.md)

@@ -61,3 +61,4 @@ Most of the notes above came from [here](https://sysdig.com/blog/prometheus-metr
 
 ## Links
 - [1599070567-word-quantiles.md](1599070567-word-quantiles.md)
+- [1599071120-prometheus-example-custom-metrics.md](1599071120-prometheus-example-custom-metrics.md)

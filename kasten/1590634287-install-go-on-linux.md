@@ -11,3 +11,4 @@ export PATH="${PATH}:/usr/local/go/bin"
 ```
 
 ## Links
+- [1599071003-go-build-linux.md](1599071003-go-build-linux.md)

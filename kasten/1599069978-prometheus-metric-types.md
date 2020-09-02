@@ -60,3 +60,4 @@ go_gc_duration_seconds_count 13118
 Most of the notes above came from [here](https://sysdig.com/blog/prometheus-metrics/)
 
 ## Links
+- [1599070567-word-quantiles.md](1599070567-word-quantiles.md)

@@ -24,3 +24,4 @@ The following SQL statement can be applied to a postgres datase. In the schema a
 - [1599582410-postgres-create-user.md](1599582410-postgres-create-user.md)
 - [1599582635-postgres-grant-user-connect.md](1599582635-postgres-grant-user-connect.md)
 - [1599582681-postgres-grant-user-to-table.md](1599582681-postgres-grant-user-to-table.md)
+- [1599583347-postgres-change-password-for-user.md](1599583347-postgres-change-password-for-user.md)

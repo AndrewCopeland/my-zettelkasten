@@ -52,7 +52,7 @@ Now that the authenticator is configured and enabled and the host is configured 
 # retrieve access token from the azure metadata service (User Assigned Identity)
 access_token=$(curl -s -H "Metadata: true" "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&client_id=<managed identity client ID>&resource=https://management.azure.com/" | jq -r ".access_token")
 
-# retreieve access token from the azure metadata service (System Assigned Identity)
+# retrieve access token from the azure metadata service (System Assigned Identity)
 access_token=$(curl -s -H "Metadata: true" "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/" | jq -r ".access_token")
 
 # authenticate to conjur using the access token

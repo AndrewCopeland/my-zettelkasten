@@ -5,7 +5,7 @@ The following policy will need to be loaded to configure conjur to use the azure
 ```yaml
 - !policy
   id: conjur/authn-azure/<service id>
-  body
+  body:
   - !webservice
   - !variable provider-uri
   - !group apps

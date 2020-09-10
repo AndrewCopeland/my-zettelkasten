@@ -9,3 +9,4 @@ psql "host=localhost port=5432 user=db_user dbname=petstore sslmode=disable"
 ```
 
 ## Links
+- [1599754328-secretless-k8s-manifest-example.md](1599754328-secretless-k8s-manifest-example.md)

@@ -5,7 +5,7 @@
 curl http://pkiaas:8080/ca/certificate > /etc/ssh/ca.pub
 
 # adding the correct sshd_config and restarting
-echo "TrustedCAUserKeys /etc/ssh/ca.pub" >> sshd_config
+echo "TrustedUserCAKeys /etc/ssh/ca.pub" >> sshd_config
 service ssh restart
 ```
 

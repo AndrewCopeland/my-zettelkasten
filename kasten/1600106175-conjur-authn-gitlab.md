@@ -39,7 +39,7 @@ secret1=$(curl -H "$header" https://conjur.company.local/secrets/account/variabl
 secret2=$(curl -H "$header" https://conjur.company.local/secrets/account/variable/path/to/secret2)
 ```
 
-For more information of what is actually in the `CI_JOB_JWT` (environment variable see here.)[1600105851-gitlab-runner-jwt.md]
+For more information of what is actually in the [`CI_JOB_JWT` environment variable see here.](1600105851-gitlab-runner-jwt.md)
 
 ## Links
 - [1600105851-gitlab-runner-jwt.md](1600105851-gitlab-runner-jwt.md)

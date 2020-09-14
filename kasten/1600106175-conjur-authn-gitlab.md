@@ -42,3 +42,4 @@ secret2=$(curl -H "$header" https://conjur.company.local/secrets/account/variabl
 
 ## Links
 - [1600105851-gitlab-runner-jwt.md](1600105851-gitlab-runner-jwt.md)
+- [1600103673-gitlab-setup-docker-compose.md](1600103673-gitlab-setup-docker-compose.md)

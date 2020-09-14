@@ -23,8 +23,12 @@ To define a specific gitlab job within conjur load the following policy:
 - !host
   id: some-gitlab-job
   annotations:
+    # since repo name and namespaces could change you can use the project ID
+    authn-gitlab/project-id: 1858
+    # or you could use the namespace and repo to identity a specific gitlab job
     authn-gitlab/namespace: andcope1995
     authn-gitlab/repo: test-runner
+
     # Branch could be used to give different levels of permissions depending on the branch
     # authn-gitlab/branch: master, dev, etc....
 ```

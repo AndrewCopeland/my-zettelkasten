@@ -19,3 +19,4 @@ Having issues with using a self signed certficiate. I might just have to add the
 
 ## Links
 - [.1599715252-visual-studio-net-assembler.png](.1599715252-visual-studio-net-assembler.png)
+- [.1599715281-visual-studio-reference.png](.1599715281-visual-studio-reference.png)

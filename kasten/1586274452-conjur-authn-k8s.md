@@ -13,3 +13,4 @@ Conjur offers the ability to authenticate specific k8s resources.
 - [1586875794-conjur-authn-k8s-external-authenticator.md](1586875794-conjur-authn-k8s-external-authenticator.md)
 - [1586878728-conjur-authn-k8s-side-car-manifest.md](1586878728-conjur-authn-k8s-side-car-manifest.md)
 - [1592504888-conjur-config-map-k8s.md](1592504888-conjur-config-map-k8s.md)
+- [1599754328-secretless-k8s-manifest-example.md](1599754328-secretless-k8s-manifest-example.md)

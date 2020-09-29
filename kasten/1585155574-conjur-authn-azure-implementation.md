@@ -83,6 +83,8 @@ Instead of assigning a User managed or System assigned identity. You can authent
   member: !host azure-managed-identity
 ```
 
+
+## Authenticate to Conjur
 Now that the authenticator is configured and enabled and the host is configured correctly. We now want to log into an Azure VM that has the user managed identity associated with it and execute the following.
 ```bash
 # retrieve access token from the azure metadata service (User Assigned Identity)

@@ -1,6 +1,7 @@
 # 1585155574 conjur-authn-azure-implementation
 #conjur #authn-azure
 
+## Configure Authenticator
 The following policy will need to be loaded to configure conjur to use the azure authenticator.
 ```yaml
 - !policy
@@ -31,7 +32,26 @@ At this point the authenticator should be configured and enabled. You can check 
 curl -k https://<conjur appliance url>/info
 ```
 
+## Configure Application Identity
 Now we want to create a host that will have the ability to authenticate to the `authn-azure` authenticator we have enabled.
+
+### System Assigned Identity
+```yaml
+# host with the appropriate annotations
+- !host
+  id: azure-managed-identity
+  annotations:
+    authn-azure/subscription-id: <sub id of the managed identity>
+    authn-azure/resource-group: <resource group of the managed identity>
+    authn-azure/system-assigned-identity: <system assigned identity ID>
+
+# actually give the host ability to use the authn-azure authenticator
+- !grant
+  role: !group conjur/authn-azure/<service id>/apps
+  member: !host azure-managed-identity
+```
+
+### User Managed Identity
 ```yaml
 # host with the appropriate annotations
 - !host
@@ -40,6 +60,22 @@ Now we want to create a host that will have the ability to authenticate to the `
     authn-azure/subscription-id: <sub id of the managed identity>
     authn-azure/resource-group: <resource group of the managed identity>
     authn-azure/user-managed-identity: <name of the managed identity>
+
+# actually give the host ability to use the authn-azure authenticator
+- !grant
+  role: !group conjur/authn-azure/<service id>/apps
+  member: !host azure-managed-identity
+```
+
+### Resource Group Identity
+Instead of assigning a User managed or System assigned identity. You can authenticate an entire Azure Resource Group.
+```yaml
+# host with the appropriate annotations
+- !host
+  id: azure-managed-identity
+  annotations:
+    authn-azure/subscription-id: <sub id of the managed identity>
+    authn-azure/resource-group: <resource group of the managed identity>
 
 # actually give the host ability to use the authn-azure authenticator
 - !grant

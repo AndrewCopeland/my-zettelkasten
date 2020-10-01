@@ -8,3 +8,4 @@ Having a step by step guide on how to deploy concourse /w conjur would bring val
 
 
 ## Links
+- [1601577457-conjur-concourse-integration-bosh-ops-file.md](1601577457-conjur-concourse-integration-bosh-ops-file.md)

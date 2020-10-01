@@ -1,11 +1,9 @@
 # 1601577544 aws-lambda-go-lang-example
 
-This is a simple example of authenticating with conjur `authn-iam` and listing out the resources this identity has access to,.
+This is a simple example of authenticating with conjur `authn-iam` and listing out the resources this identity has access to.
 
 An AWS Lambda must be packaged into a .zip file to be loaded into the lambda function.
-
-
-Just compile this code with a Linux distro and zip this file and then you can upload the results into AWS Lambda.
+[Just compile this code with a Linux distro](1599071003-go-build-linux.md) and zip this file and then you can upload the results into AWS Lambda.
 
 ```go
 package main

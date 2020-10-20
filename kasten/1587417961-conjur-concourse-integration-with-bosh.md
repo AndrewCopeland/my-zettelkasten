@@ -13,3 +13,4 @@ It was added to concourse in version [v5.8.0](1602268795-concourse-conjur-integr
 - [1601577457-conjur-concourse-integration-bosh-ops-file.md](1601577457-conjur-concourse-integration-bosh-ops-file.md)
 - [1590770710-concourse-error-build-from-source-dev.md](1590770710-concourse-error-build-from-source-dev.md)
 - [1602268795-concourse-conjur-integration-added.md](1602268795-concourse-conjur-integration-added.md)
+- [1602269785-concourse-bosh-job-properties-6.3.1.md](1602269785-concourse-bosh-job-properties-6.3.1.md)

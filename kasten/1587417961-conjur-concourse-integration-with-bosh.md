@@ -10,3 +10,5 @@ Having a step by step guide on how to deploy concourse /w conjur would bring val
 ## Links
 - [1601577457-conjur-concourse-integration-bosh-ops-file.md](1601577457-conjur-concourse-integration-bosh-ops-file.md)
 - [1590770710-concourse-error-build-from-source-dev.md](1590770710-concourse-error-build-from-source-dev.md)
+- [1587417961-conjur-concourse-integration-with-bosh.md](1587417961-conjur-concourse-integration-with-bosh.md)
+- [1587417961-conjur-concourse-integration-with-bosh.md](1587417961-conjur-concourse-integration-with-bosh.md)

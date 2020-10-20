@@ -39,3 +39,4 @@ This is a screen shot for what it should look like:
 - [.1603214148-teamcity-edit-project.png](.1603214148-teamcity-edit-project.png)
 - [.1603214159-teamcity-general-settings.png](.1603214159-teamcity-general-settings.png)
 - [.1603214168-teamcity-add-connection.png](.1603214168-teamcity-add-connection.png)
+- [.1603215167-teamcity-paramater.png](.1603215167-teamcity-paramater.png)

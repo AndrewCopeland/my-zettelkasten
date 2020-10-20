@@ -21,3 +21,4 @@ Below is an example of a OPs file for deploying Conjur /w bosh.
 
 ## Links
 - [1587417961-conjur-concourse-integration-with-bosh.md](1587417961-conjur-concourse-integration-with-bosh.md)
+- [1602269785-concourse-bosh-job-properties-6.3.1.md](1602269785-concourse-bosh-job-properties-6.3.1.md)

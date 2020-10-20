@@ -5,3 +5,4 @@ https://bosh.io/jobs/web?source=github.com/concourse/concourse-bosh-release&vers
 
 ## Links
 - [1587417961-conjur-concourse-integration-with-bosh.md](1587417961-conjur-concourse-integration-with-bosh.md)
+- [1601577457-conjur-concourse-integration-bosh-ops-file.md](1601577457-conjur-concourse-integration-bosh-ops-file.md)

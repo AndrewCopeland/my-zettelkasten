@@ -10,3 +10,4 @@ The solution should be similiar to hashicorp solutions:
 
 ## Links
 - [.1603214148-teamcity-edit-project.png](.1603214148-teamcity-edit-project.png)
+- [.1603214159-teamcity-general-settings.png](.1603214159-teamcity-general-settings.png)

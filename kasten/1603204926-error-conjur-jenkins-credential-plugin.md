@@ -17,3 +17,4 @@ MESSAGE: Not Found
 
 ## Links
 - [.1603205144-error-conjur-jenkins-credential-plugin.png](.1603205144-error-conjur-jenkins-credential-plugin.png)
+- [1603207451-error-conjur-jenkins-credential-plugin-stack-trace.md](1603207451-error-conjur-jenkins-credential-plugin-stack-trace.md)

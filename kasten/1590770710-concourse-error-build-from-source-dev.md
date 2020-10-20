@@ -53,3 +53,4 @@ error: invalid argument for flag `--tsa-worker-private-key' (expected *flag.Priv
 
 ## Links
 - [1590770855-concourse-solution-upgrade-dev-image.md](1590770855-concourse-solution-upgrade-dev-image.md)
+- [1587417961-conjur-concourse-integration-with-bosh.md](1587417961-conjur-concourse-integration-with-bosh.md)

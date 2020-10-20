@@ -32,6 +32,9 @@ Value: %conjur:path/to/secret/username%
 ```
 
 This is a screen shot for what it should look like:
+
+
+
 ![.1603215167-teamcity-paramater.png](.1603215167-teamcity-paramater.png)
 
 

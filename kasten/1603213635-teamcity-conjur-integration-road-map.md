@@ -7,6 +7,9 @@ The solution should be similiar to hashicorp solutions:
 - blog: https://blog.jetbrains.com/teamcity/2017/09/vault/
 
 
+How to setup a plugin can be found here:
+- https://plugins.jetbrains.com/docs/teamcity/getting-started-with-plugin-development.html#Step+1.+Set+up+the+environment
+
 To create this integration its a 2 pronged solution:
 
 ## Project Connection

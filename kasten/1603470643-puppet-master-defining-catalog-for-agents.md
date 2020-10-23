@@ -28,5 +28,12 @@ As you can se the first file called `AgentTestfileAll.txt` will be applied to ev
 However the `AgentTestfile1.txt` will only be applied to the puppet agent whos hostname is `9e50cf884c7d`
 
 
+The puppet master will compile the above `site.pp` into a catalog for each node. 
+When the puppet agent then tries to apply these configurations this catalog will be downloaded from the master and cached on the puppet agent locally.
+This is so if network connectivity to the master was an issue that state can still be applied to the VM/puppet agent.
+
+[Where is this catalog cached and what it looks like?](1603470422-puppet-agent-catalog-cache.md)
+
+
 ## Links
 - [1603470422-puppet-agent-catalog-cache.md](1603470422-puppet-agent-catalog-cache.md)

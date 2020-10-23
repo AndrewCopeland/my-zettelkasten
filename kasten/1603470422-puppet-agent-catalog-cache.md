@@ -136,3 +136,4 @@ The catalog by default will be a `.json` file and will be located in the directo
 
 
 ## Links
+- [1603470643-puppet-master-defining-catalog-for-agents.md](1603470643-puppet-master-defining-catalog-for-agents.md)

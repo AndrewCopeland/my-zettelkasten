@@ -18,7 +18,7 @@ require 'conjur/api'
 module Puppet::Parser::Functions
   newfunction(:api_key_retreiver, :type => :rvalue) do |args|
     # I will need to test the automatic retrieval of Conjur configuration below.
-	# I was not able to get it to work in my lab and might just have the wrong file permisisons
+    # I was not able to get it to work in my lab and might just have the wrong file permisisons
     # Conjur::Config.load
     # Conjur::Config.apply
     # conjur = Conjur::Authn.connect nil, noask: true
@@ -30,8 +30,8 @@ module Puppet::Parser::Functions
     Conjur.configuration.appliance_url = 'https://conjur-master'
     OpenSSL::SSL::SSLContext::DEFAULT_CERT_STORE.add_file "/etc/conjur-conjur.pem"
 	
-	# Of coarse we do not want a hardcoded API key in the function itself. 
-	# This was a work around since I Was not able to get the conjur.conf to load automatically.
+    # Of coarse we do not want a hardcoded API key in the function itself. 
+    # This was a work around since I Was not able to get the conjur.conf to load automatically.
     conjur = Conjur::API.new_from_key "host/master1", "3d26y791vfc8xx29cm5x71gp799dfdygbk3wsdxec2m73rpw18bdksz"
 
     desiredHostname = "#{domain}-#{pp_role}-#{pp_app_tier}"

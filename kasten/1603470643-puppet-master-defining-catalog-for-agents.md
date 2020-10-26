@@ -38,3 +38,4 @@ This is so if network connectivity to the master was an issue that state can sti
 ## Links
 - [1603470422-puppet-agent-catalog-cache.md](1603470422-puppet-agent-catalog-cache.md)
 - [1603473949-puppet-master-functions.md](1603473949-puppet-master-functions.md)
+- [1603725828-puppet-dual-api-key-implementation.md](1603725828-puppet-dual-api-key-implementation.md)

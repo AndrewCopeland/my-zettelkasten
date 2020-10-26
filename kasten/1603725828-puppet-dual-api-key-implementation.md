@@ -11,7 +11,7 @@ apt-get install build-essential g++
 ```
 
 After installing these dependancies we can now import the function that will run on the compile master:
-```
+```ruby
 # /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/parser/functions/api_key_retreiver.rb
 require 'conjur/api'
 

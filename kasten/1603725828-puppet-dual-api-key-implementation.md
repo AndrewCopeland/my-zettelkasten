@@ -65,7 +65,7 @@ file { "/etc/conjur.identity":
 }
 ```
 
-Since we updated the function we will need to reload/restart the puppet master:
+Since we updated the function/gems required by the function we need to reload/restart the puppet master:
 ```bash
 /etc/init.d/puppetserver reload
 ```

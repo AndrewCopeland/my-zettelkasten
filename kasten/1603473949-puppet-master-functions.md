@@ -8,3 +8,4 @@ The function can be found here:
 
 
 ## Links
+- [1603470643-puppet-master-defining-catalog-for-agents.md](1603470643-puppet-master-defining-catalog-for-agents.md)

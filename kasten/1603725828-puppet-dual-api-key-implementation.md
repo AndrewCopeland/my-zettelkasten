@@ -75,3 +75,4 @@ Now run `puppet agent -t` on the puppet agent node and the `/etc/conjur.identity
 
 ## Links
 - [1603470643-puppet-master-defining-catalog-for-agents.md](1603470643-puppet-master-defining-catalog-for-agents.md)
+- [1604348394-conjur-puppet-policy.md](1604348394-conjur-puppet-policy.md)

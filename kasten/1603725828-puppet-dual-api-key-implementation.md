@@ -103,7 +103,7 @@ Since we updated the function/gems required by the function we need to reload/re
 /etc/init.d/puppetserver reload
 ```
 
-Now run `puppet agent -t` on the puppet agent node and the `/etc/conjur.identity` should be created with the correct `login` and `password`.
+Now run `puppet agent -t` on the puppet agent node and the `/etc/db.password` should contain the password of the db secret ID.
 
 
 ## Links

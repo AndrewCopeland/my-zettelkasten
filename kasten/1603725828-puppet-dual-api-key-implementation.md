@@ -12,56 +12,89 @@ apt-get install build-essential g++
 
 After installing these dependancies we can now import the function that will run on the compile master:
 ```ruby
-# /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/parser/functions/api_key_retreiver.rb
+# /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/parser/functions/api_key_retriever.rb
 require 'conjur/api'
+require 'conjur/cli'
 
 module Puppet::Parser::Functions
-  newfunction(:api_key_retreiver, :type => :rvalue) do |args|
-    # I will need to test the automatic retrieval of Conjur configuration below.
-    # I was not able to get it to work in my lab and might just have the wrong file permisisons
-    # Conjur::Config.load
-    # Conjur::Config.apply
-    # conjur = Conjur::Authn.connect nil, noask: true
+  newfunction(:api_key_retriever, :type => :rvalue) do |args|
     domain = args[0]
     pp_role = args[1]
     pp_app_tier = args[2]
 
-    Conjur.configuration.account = 'conjur'
-    Conjur.configuration.appliance_url = 'https://conjur-master'
-    OpenSSL::SSL::SSLContext::DEFAULT_CERT_STORE.add_file "/etc/conjur-conjur.pem"
-	
-    # Of coarse we do not want a hardcoded API key in the function itself. 
-    # This was a work around since I Was not able to get the conjur.conf to load automatically.
-    conjur = Conjur::API.new_from_key "host/master1", "3d26y791vfc8xx29cm5x71gp799dfdygbk3wsdxec2m73rpw18bdksz"
+    # -- file
+    Conjur::Config.load
+    Conjur::Config.apply
+    conjur = Conjur::Authn.connect nil, noask: true
 
-    desiredHostname = "#{domain}-#{pp_role}-#{pp_app_tier}"
+
+    desiredHostname = "#{domain}-#{pp_app_tier}-#{pp_role}"
     resources = conjur.resources kind: 'variable', search: desiredHostname
 
     if resources.length() == 0
-      raise "No resources were returned withj query '#{desiredHostname}'"
+      raise "No resources were returned with query '#{desiredHostname}'"
     elsif resources.length() > 1
       raise "More than on resource was returned with query '#{desiredHostname}'"
     else
        variable = resources[0]
        return {
-          'login' => "host/#{desiredHostname}",
-          'apiKey' => "#{variable.value}"
+         'login' => "host/#{desiredHostname}",
+	 'apiKey' => "#{variable.value}"
        }
     end
   end
 end
 ```
 
-So now we have imported the function lets modify the `site.pp` or the `init.pp` to propogate the API key returned to the function down to the puppet agent node.
+Lets create the files in which the puppet master will get its identity from.
+Create a file `/etc/conjur.conf` with the following content:
 ```
-# /etc/puppetlabs/code/environments/production/manifests/site.pp or /etc/puppetlabs/code/environments/production/manifests/init.pp
-$result = api_key_retreiver($domain, $pp_role, $pp_app_tier)
+---
+account: conjur
+plugins: []
+appliance_url: https://conjur-follower-url
+cert_file: "/etc/conjur-conjur.pem"
+netrc_path: "/etc/conjur.identity"
+```
+
+Create the file that represents the conjur certificate file `/etc/conjur-conjur.pem`:
+```bash
+openssl s_client -showcerts -connect <conjur instance host name>:443 < /dev/null 2> /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > /etc/conjur-conjur.pem
+```
+
+Create the identity file that contains the api key `/etc/conjur.identity`:
+```
+machine https://conjur-follower-url/authn
+  login host/<host name>
+  password <host api key>
+```
+
+
+So now we have imported the function and created the config and identity files lets modify the `site.pp` or the `init.pp` to propogate the API key returned to the function down to the puppet agent node.
+```
+$result = api_key_retriever($domain, $pp_role, $pp_app_tier)
+notice($result)
 $login = $result[login]
 $apiKey = $result[apiKey]
 
-file { "/etc/conjur.identity":
+$sslcert = @("EOT")
+-----BEGIN CERTIFICATE-----
+...
+-----END CERTIFICATE-----
+|-EOT
+
+$dbpass = Deferred(conjur::secret, ['db/password', {
+  appliance_url => "https://conjur-master",
+  account => "conjur",
+  authn_login => "$login",
+  authn_api_key => Sensitive("$apiKey"),
+  ssl_certificate => $sslcert
+}])
+
+
+file { "/etc/db.password":
         mode => "0644",
-        content  => "machine https://conjur-master/authn\n  login $login \n  password $apiKey \n",
+        content  => $dbpass,
 }
 ```
 
@@ -76,4 +109,3 @@ Now run `puppet agent -t` on the puppet agent node and the `/etc/conjur.identity
 ## Links
 - [1603470643-puppet-master-defining-catalog-for-agents.md](1603470643-puppet-master-defining-catalog-for-agents.md)
 - [1604348394-conjur-puppet-policy.md](1604348394-conjur-puppet-policy.md)
-- [1604506204-puppet-trusted-facts.md](1604506204-puppet-trusted-facts.md)

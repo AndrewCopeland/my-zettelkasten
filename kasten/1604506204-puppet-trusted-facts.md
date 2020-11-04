@@ -27,3 +27,4 @@ $trusted['extensions']['pp_image_name']
 
 
 ## Links
+- [1603725828-puppet-dual-api-key-implementation.md](1603725828-puppet-dual-api-key-implementation.md)

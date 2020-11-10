@@ -7,3 +7,4 @@
 - [.1604684486-Conjur-Architecture-Azure.pdf](.1604684486-Conjur-Architecture-Azure.pdf)
 - [.1604684834-High-Availability-Prod.png](.1604684834-High-Availability-Prod.png)
 - [.1604684869-Logical-view.png](.1604684869-Logical-view.png)
+- [.1605021890-Conjur_OpenShift.png](.1605021890-Conjur_OpenShift.png)

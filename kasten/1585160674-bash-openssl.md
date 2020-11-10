@@ -16,6 +16,11 @@ Convert .pfx to a .pem:
 openssl pkcs12 -in <pkcs-12-certificate-and-key-file> -out <pem-certificate-and-key-file> 
 ```
 
+Convert a .pem to a .pfx without key:
+```bash
+openssl pkcs12 -export -nokeys -in <pem-cert> -out <pkcs-12-cert>
+```
+
 Remove private key password:
 ```bash
 openssl rsa -in [file1.key] -out [file2.key]

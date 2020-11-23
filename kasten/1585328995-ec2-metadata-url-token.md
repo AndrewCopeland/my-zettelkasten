@@ -14,3 +14,4 @@ curl http://169.254.169.254/latest/meta-data/iam/security-credentials/<iam role 
 ## Links
 - [1584721584-conjur-authn-iam.md](1584721584-conjur-authn-iam.md)
 - [1586469583-aws-eks-iam-roles-with-service-accounts.md](1586469583-aws-eks-iam-roles-with-service-accounts.md)
+- [1606153297-aws-get-account-id-from-ec2.md](1606153297-aws-get-account-id-from-ec2.md)

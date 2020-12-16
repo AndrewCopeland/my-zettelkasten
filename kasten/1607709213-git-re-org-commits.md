@@ -16,11 +16,35 @@ pick eed23a1 Complete awesome feature with better error message
 pick a2d6ee9 Review fixes
 ```
 
-For each line (commits) you can do different possible actions:
-- `fixup`: Command tells git to ammend the commit without changing the message
-- `squash`: Command tells git to amend the commit and ask in an editor which is the message of the new commit
-- 
+All you need to do is change the work `pick` to the desired command:
+```
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified). Use -c <commit> to reword the commit message.
+```
 
+
+If I have a lot of small commits that can easily be squashed into one I use the `fixup` command.
+```
+pick 18d8ace Update README
+fixup ccc50cc Update README 1
+fixup 5a03bf5 Update README 2
+fixup 24fe90a Update README 3
+```
+
+This will squash the 3 bottom commits into the first commit `Update README`.
 
 
 ## Links

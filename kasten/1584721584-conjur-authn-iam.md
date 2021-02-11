@@ -40,7 +40,7 @@ evoke variables set CONJUR_AUTHENTICATORS=authn,authn-iam/<service id>
 - [Authenticating an AWS Fargate or ECS instance](1585068641-aws-fargate-iam-authn-conjur.md)
 - [Authenticating an EC2 instance (python)](https://github.com/AndrewCopeland/conjur-iam-api-key#ec2-usage)
 - [Authenticating an EC2 instance (cli)](https://github.com/AndrewCopeland/conjur-authn-iam-client/tree/master/docs/ec2#authenticating-ec2-with-cli)
-- [Authenticating a Lambda function (python)](https://github.com/AndrewCopeland/conjur-iam-api-key#lambda-usage)
+- [Authenticating a Lambda function (python)](https://github.com/cyberark/conjur-authn-iam-client-python#lambda-usage)
 - [Authenticating a Lambda Function (go)](https://github.com/AndrewCopeland/conjur-authn-iam-client/tree/master/docs/lambda)
 - [Using summon with IAM role on EC2 (python)](https://github.com/AndrewCopeland/conjur-iam-api-key#summon-usage)
 - [Authenticating using Java](https://github.com/AndrewCopeland/conjur-iam-api-key-java/blob/master/src/ConjurApi/AwsIamAuthn/ConjurAwsIamAuthn.java)

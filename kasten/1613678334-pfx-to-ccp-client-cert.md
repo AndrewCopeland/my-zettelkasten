@@ -18,8 +18,8 @@ privateKeyEnd=$(grep -in "END PRIVATE KEY" client-cert.pem | awk -F ':' '{print 
 echo "\nPRIVATE KEY:"
 sed -n "${privateKeyStart},${privateKeyEnd}p" < client-cert.pem
 
-certKeyStart=$(grep -in "BEGIN CERTIFICATE" client-cert.pem | awk -F ':' '{print $1}')
-certKeyEnd=$(grep -in "END CERTIFICATE" client-cert.pem | awk -F ':' '{print $1}')
+certKeyStart=$(grep -in "BEGIN CERTIFICATE" client-cert.pem | head -n 1 | awk -F ':' '{print $1}')
+certKeyEnd=$(grep -in "END CERTIFICATE" client-cert.pem | head -n 1 | awk -F ':' '{print $1}')
 echo "\nPUBLIC CERT:"
 sed -n "${certKeyStart},${certKeyEnd}p" < client-cert.pem > $CERT_FILE
 cat "${CERT_FILE}"

@@ -1,7 +1,5 @@
 # 1615909434 conjur-authn-iam-quick-start
 
-You contact the server over port 8443 and not 443. Is this intended?
-
 I run the following command to get the instance certificate:
 ```
 openssl s_client -showcerts -connect localhost:8443 < /dev/null 2> /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p'

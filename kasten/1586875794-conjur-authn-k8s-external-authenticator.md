@@ -91,7 +91,7 @@ kubectl create -f authn-k8s-service-account.yml
 Now that we have created the service accounts, lets retrieve the needed variables using the `kubectl` command:
 ```bash
 # obtain the service account token secret
-TOKEN_SECRET_NAME="$(kubectl get secrets -n default\
+TOKEN_SECRET_NAME="$(kubectl get secrets -n default \
     | grep 'conjur.*service-account-token' \
     | head -n1 \
     | awk '{print $1}')"

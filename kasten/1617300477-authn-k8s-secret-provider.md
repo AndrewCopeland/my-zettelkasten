@@ -6,6 +6,7 @@
   annotations:
     authn-k8s/namespace: conjur
     authn-k8s/authentication-container-name: cyberark-secrets-provider-for-k8s
+    authn-k8s/service-account: secrets-provider-service-account
 
 - !grant
   role: !group conjur/authn-k8s/<authn-id>/apps

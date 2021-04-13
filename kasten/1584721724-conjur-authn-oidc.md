@@ -15,3 +15,4 @@ The conjur `authn-oidc` authenticator allows the ability to authenticate using a
 ## Links
 - [1585072449-conjur-home-authenticators.md](1585072449-conjur-home-authenticators.md)
 - [1585089211-conjur-okta-authentication-bash.md](1585089211-conjur-okta-authentication-bash.md)
+- [1618333199-conjur-authn-oidc-simple-policy.md](1618333199-conjur-authn-oidc-simple-policy.md)

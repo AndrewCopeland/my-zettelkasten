@@ -9,8 +9,6 @@ https://github.com/markedjs/marked
 ```
 
 And can be implemented like:
-```
-
 ### Usage
 ```javascript
 parent.innerHTML = marked(content)	

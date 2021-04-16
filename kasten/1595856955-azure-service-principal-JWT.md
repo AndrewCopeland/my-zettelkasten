@@ -51,3 +51,4 @@ This `appid` property is the same value as the `client_id` query param specified
 
 
 ## Links
+- [1618608993-jwt-types.md](1618608993-jwt-types.md)

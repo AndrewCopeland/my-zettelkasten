@@ -17,3 +17,4 @@ parent.innerHTML = marked(content)
 
 
 ## Links
+- [1618596430-js-html-santize.md](1618596430-js-html-santize.md)

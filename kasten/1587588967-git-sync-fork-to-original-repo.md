@@ -31,3 +31,4 @@ All the information here was retrieved from the following link:
 https://digitaldrummerj.me/git-syncing-fork-with-original-repo/
 
 ## Links
+- [1618929312-git-checkout-remote-branch.md](1618929312-git-checkout-remote-branch.md)

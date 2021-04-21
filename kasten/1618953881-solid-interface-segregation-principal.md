@@ -4,3 +4,4 @@ Many clinet-specific interfaces are better than one general purpose interface. C
 
 
 ## Links
+- [1619046519-solid-software-development.md](1619046519-solid-software-development.md)

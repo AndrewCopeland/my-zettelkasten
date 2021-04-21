@@ -4,3 +4,4 @@ Objects in a program should be replacable with instances of their subtypes witho
 
 
 ## Links
+- [1619046519-solid-software-development.md](1619046519-solid-software-development.md)

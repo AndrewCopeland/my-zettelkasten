@@ -25,6 +25,8 @@ appliance_url: https://<conjur appliance url>/
 ```
 
 3. On the ansible host create `$HOME/.netrc`
+
+
 ```
 machine https://conjur-master/authn
   login host/<host identity in step #1>
@@ -32,6 +34,8 @@ machine https://conjur-master/authn
 ```
 
 4. On the ansible host install summon:
+
+
 ```bash
 curl -sSL https://raw.githubusercontent.com/cyberark/summon/master/install.sh | bash
 ````

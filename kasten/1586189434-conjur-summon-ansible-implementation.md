@@ -15,6 +15,8 @@
 ```
 
 2. On the ansible host create `/etc/conjur.conf` with the following content:
+
+
 ```yaml
 ---
 account: <conjur account>

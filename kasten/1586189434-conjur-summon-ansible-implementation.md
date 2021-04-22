@@ -48,6 +48,8 @@ curl -sSL https://raw.githubusercontent.com/cyberark/summon-conjur/master/instal
 ```
 
 6. On the ansible host create a file called `secrets.yml` with the content:
+
+
 ```
 <env var key>: !var <secret path>
 <env var key>: !var <secret path>

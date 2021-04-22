@@ -2,6 +2,8 @@
 #conjur #summon #integration
 
 1. Generate the Host and API Key. Load by executing `conjur policy load root host_file_name.yml`
+
+
 ```yaml
 ---
 - !host <host identity>

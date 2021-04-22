@@ -41,6 +41,8 @@ curl -sSL https://raw.githubusercontent.com/cyberark/summon/master/install.sh | 
 ````
 
 5. On the anisble host install summon provider:
+
+
 ```bash
 curl -sSL https://raw.githubusercontent.com/cyberark/summon-conjur/master/install.sh | bash
 ```
@@ -58,11 +60,15 @@ DB_PASSWORD: !var db/postgres/password
 ```
 
 7. Test summon by executing (this should print out the 3 values mentioned in the `secrets.yml`):
+
+
 ```bash
 summon -f "<path to secrets.yml>/secrets.yml" env
 ```
 
 8. execute the playbook with summon:
+
+
 ```bash
 summon ansible-playbook test.yml
 ````

@@ -15,6 +15,8 @@ parent.innerHTML = marked(content)
 ```
 
 
+Marked does not provide HTML sanitzation, [to do so follow this link](1618596430-js-html-santize.md)
+
 
 ## Links
 - [1618596430-js-html-santize.md](1618596430-js-html-santize.md)

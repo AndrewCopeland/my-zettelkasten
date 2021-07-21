@@ -31,5 +31,6 @@ Next step is to configure TypeScript linting by executing the following command:
 
 A new file `tslint.json` should be created.
 
+At this point, the project should be setup. 
 
 ## Links
